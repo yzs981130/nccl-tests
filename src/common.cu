@@ -710,6 +710,7 @@ testResult_t run() {
     if (p == proc) break;
     if (hostHashs[p] == hostHashs[proc]) localRank++;
   }
+  localRank = proc;
 #endif
   is_main_thread = (proc == 0) ? 1 : 0;
 
